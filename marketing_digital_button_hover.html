@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Digital - Página Principal</title>
+    <style>
+        /* Estilo general y tipografía retro */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            color: #ffd03d;
+            background-color: #000360;
+            text-align: center;
+        }
+        header {
+            padding: 40px 20px;
+            color: #42b3fb;
+        }
+        header img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            text-transform: uppercase;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #42fb65;
+            font-weight: bold;
+        }
+        .hero {
+            padding: 50px 20px;
+            background-color: #d940dc;
+            color: #ffd03d;
+        }
+        .hero h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .services, .about, .contact, .newsletter {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            color: #42fb65;
+            text-align: center;
+        }
+        .services h2, .about h2, .contact h2, .newsletter h2 {
+            color: #42b3fb;
+        }
+        .newsletter {
+            background-color: #42b3fb;
+            color: #000360;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 90%;
+            font-size: 1em;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .newsletter input[type="submit"] {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: #d940dc;
+            color: white;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Estilo de botón con efecto hover */
+        .cta-button, input[type="submit"], nav a {
+            background-color: #42b3fb;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-family: 'Press Start 2P', cursive;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .cta-button:hover, input[type="submit"]:hover, nav a:hover {
+            background-color: #d940dc; /* Cambiar color al pasar el cursor */
+        }
+
+        /* Formulario de contacto */
+        select, input[type="text"], input[type="email"] {
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            background-color: #42b3fb;
+            color: white;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Diseño responsivo */
+        @media (max-width: 600px) {
+            header img {
+                width: 150px;
+            }
+            .hero h1 {
+                font-size: 1.2em;
+            }
+            .cta-button, select, input[type="submit"] {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+            .social-links a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="12(1).png" alt="Logo Brainstorming Marketing Digital">
+        <h1>MARKETING DIGITAL</h1>
+        <p>Impulsamos tu negocio a través de estrategias efectivas de marketing</p>
+    </header>
+
+    <nav>
+        <a href="#services">Servicios</a>
+        <a href="#about">Acerca de Nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Bienvenido a nuestro servicio de Marketing Digital</h1>
+        <p>Transformamos tu visión en resultados digitales. Descubre cómo podemos ayudarte a alcanzar tus metas.</p>
+        <a href="#services" class="cta-button">Nuestros Servicios</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Servicios</h2>
+        <p>Ofrecemos una variedad de servicios de marketing digital adaptados a tus necesidades:</p>
+        <ul>
+            <li>Programación</li>
+            <li>Marketing Digital</li>
+            <li>Contenido Digital IA</li>
+            <li>Edición</li>
+            <li>Diseño Gráfico</li>
+        </ul>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos un equipo apasionado por el marketing digital con años de experiencia en ayudar a empresas a crecer en el mundo digital.</p>
+    </section>
+
+    <section class="newsletter">
+        <h2>Suscríbete a nuestro Newsletter</h2>
+        <p>Recibe las últimas actualizaciones y tips de marketing digital directamente en tu bandeja de entrada.</p>
+        <form>
+            <input type="email" placeholder="Ingresa tu correo electrónico" required><br>
+            <input type="submit" value="Suscribirse">
+        </form>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <p>¿Listo para llevar tu negocio al siguiente nivel? Contáctanos hoy mismo.</p>
+        <form>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="service">Seleccione un servicio:</label><br>
+            <select id="service" name="service">
+                <option value="programacion">Programación</option>
+                <option value="marketing_digital">Marketing Digital</option>
+                <option value="contenido_IA">Contenido Digital IA</option>
+                <option value="edicion">Edición</option>
+                <option value="diseno_grafico">Diseño Gráfico</option>
+            </select><br><br>
+
+            <label for="plan">Seleccione un plan:</label><br>
+            <select id="plan" name="plan">
+                <option value="basico">Básico</option>
+                <option value="estandar">Estándar</option>
+                <option value="premium">Premium</option>
+            </select><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MARKETING DIGITAL. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <p>Contáctanos en nuestras redes sociales:</p>
+            <a href="https://www.instagram.com/brainstromingmdz?igsh=MWt3dnJ2ZmV2M2ZhcA==" target="_blank">Instagram</a> |
+            <a href="https://wa.me/542616014092" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
+</body>
+</html>
